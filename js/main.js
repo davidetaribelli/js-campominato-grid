@@ -1,9 +1,11 @@
 const gridElement = document.querySelector(".container");
 const btnPlay = document.querySelector(".play")
+let option = document.querySelector("#option");
 
 btnPlay.addEventListener("click", function(){
     gridElement.innerHTML="";
-    play(100);
+    let optioneSelected = option.value;
+    play(optioneSelected);
 }); 
 
 
@@ -12,10 +14,11 @@ btnPlay.addEventListener("click", function(){
 // FUNZIONI
 function play (box){
     
-    for (let i = 0 ; i < box; i++){
+    for (let i = 1 ; i <= box; i++){
         const newSquare = document.createElement("div");
-        newSquare.classList.add("square")
-        newSquare.innerHTML=`${i+1}`
+        newSquare.classList.add("square");
+        newSquare.classList.add(`s-${box}`);
+        newSquare.innerHTML=`${i}`;
         gridElement.appendChild(newSquare);
 
         newSquare.addEventListener("click", function() {
@@ -23,7 +26,5 @@ function play (box){
             this.classList.toggle("clicked");
         });
     }  
-     
-
-   
+        
 }

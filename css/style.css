@@ -19,10 +19,13 @@ body {
     align-items: center;
 }
 
-.play{
+#option, .play{
+    padding: 0.5em;
     border-radius: 5px;
     border-style: none;
-    padding: 1em;
+}
+
+.play{
     cursor: pointer;
 }
 
@@ -40,8 +43,6 @@ main {
 }
 
 .square{
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,9 +51,25 @@ main {
 }
 
 .container, .square{
-        border: 2px white solid;
+    border: 2px white solid;
 }
 
 .square.clicked{
     background-color: #7FFFD4;
 }
+
+.s-100{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.s-81{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.s-49{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
