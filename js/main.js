@@ -1,17 +1,24 @@
+//DICHIARO LE VARIABILI
 const gridElement = document.querySelector(".container");
 const btnPlay = document.querySelector(".play")
 let option = document.querySelector("#option");
 
+// AL CLICK DEL BOTTTONE PLAY MI AGGIUNGE UNA STRINGA VUOTA AL CONTAINER
 btnPlay.addEventListener("click", function(){
-    gridElement.innerHTML="";
-    let optioneSelected = option.value;
+    gridElement.innerHTML="";                   
+    let optioneSelected = option.value;         // IN BASE ALL'OPTIONE SCELTA MI VA A MODIDIFICARE IL "BOX" DELLA FUNZIONE
     play(optioneSelected);
 }); 
 
 
 
+///////////////
+// FUNZIONI////
+///////////////
 
-// FUNZIONI
+// FUNZIONE CHE HA IL COMPITO DI CREARE UN DIV CON LA CLASSE "SQUARE" E IN BASE AL BOX SCELTO IN PRECEDENZA AGGIUNGERE ANCHE UN ULTERIORE CLASSE PER 
+// IL NUMERO DEI QUADRATI. UTILIZZO UN'ALTRA FUNZIONE ALL'INTERNO PER CLICCARE SUI QUADRATI E STAMPARE IN COSOLE LA CASELLA SCELTA
+// E CABIARE IL COLORE A QUESTA
 function play (box){
     
     for (let i = 1 ; i <= box; i++){
