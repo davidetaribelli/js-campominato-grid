@@ -1,13 +1,13 @@
 //DICHIARO LE VARIABILI
 const gridElement = document.querySelector(".container");
 const btnPlay = document.querySelector(".play")
-let option = document.querySelector("#option");
+
 
 // AL CLICK DEL BOTTTONE PLAY MI AGGIUNGE UNA STRINGA VUOTA AL CONTAINER
 btnPlay.addEventListener("click", function(){
     gridElement.innerHTML="";                   
-    let optioneSelected = option.value;         // IN BASE ALL'OPTIONE SCELTA MI VA A MODIDIFICARE IL "BOX" DELLA FUNZIONE
-    play(optioneSelected);
+    let option = document.querySelector("#option").value;        // IN BASE ALL'OPZIONE SCELTA MI VA A MODIDIFICARE IL "BOX" DELLA FUNZIONE
+    play(option);
 }); 
 
 
