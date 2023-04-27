@@ -8,25 +8,44 @@
     <title>Campo Minato</title>
 </head>
 <body>
-    
+    <!-- Logo, scelta difficoltà e play -->
     <header>
         <div class="box">
-            <h1>Campo Minato</h1>
-            <select id="option">
-                <option value="49"> Easy </option>
-                <option value="81"> Medium </option>
-                <option value="100" selected> Hard </option>
-            </select>
-            <button class="play">Play</button>
+            <div class="left">
+                <a href="https://boolean.careers/">
+                    <img class="logo" src="./img/mobile-logo copia.png" alt="Logo" />
+                </a>
+                <h1>Campo Minato</h1>
+            </div>
+            <div class="right">
+                <label for="difficulty">Difficulty: </label>
+                <select  name="difficulty" id="option">
+                    <option value="49"> Easy </option>
+                    <option value="81"> Medium </option>
+                    <option value="100" selected> Hard </option>
+                </select>
+                <button class="play">Play</button>
+            </div>
         </div>
     </header>
-    
+    <!-- area di gioco -->
     <main>
         <div class="container">
             
         </div>
     </main>
+    <!-- fine della pagina -->
+    <footer>
+        <div class="box">
+            <small>
+                Made with &hearts; by
+                <a href="https://boolean.careers/">
+                    Boolean
+                </a>
+            </small>
 
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 </html>

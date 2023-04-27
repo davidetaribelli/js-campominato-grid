@@ -6,23 +6,38 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #50c878;
 }
 
 .box{
-    padding: 1em;
-    color: white;
     width: 700px;
+    height: 4rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+}
+
 #option, .play{
     padding: 0.5em;
     border-radius: 5px;
     border-style: none;
+    margin-left: 1em;
 }
 
 .play{
@@ -32,6 +47,7 @@ body {
 
 main {
     padding: 2rem;
+    background-color: #50c878;
 }
 
 .container{
